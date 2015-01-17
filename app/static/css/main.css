@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'leaguegothic';
+  src: url("../fonts/leaguegothic-regular-webfont.ttf");
+/*  font-family: 'bebas_neue';
+  src: url("../fonts/BebasNeue.otf");*/
+}
+
+a
+{
+  color: #000;
+  text-decoration: None;
+}
+
+body {
+  background: #CCE5FF;
+  color: #000;
+  text-align: center;
+}
+
+.name {
+  font-family: 'leaguegothic';
+  font-size: 500%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.result {
+  width: 50%;
+  text-align: left;
+  margin-left: 25%;
+}
+
+input
+{
+    border-radius: 15px;
+    border:solid 1px gray;
+    padding:5px;
+    width:50%;
+    outline:none;
+    font-size:1em;
+}
+
+.submit
+{
+  width: 10%;
+}

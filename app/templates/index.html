@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if title %}
+		<title>{{ title }}</title>
+		{% else %}
+		<title>Welcome to WikiFind</title>
+		{% endif %}
+		<strong><link rel="stylesheet" href="/static/css/main.css"></strong>
+	</head>
+	<body>
+		<div class="container">
+			<a style="display:block" href="/"><div class="name">WikiFind</div></a>
+		</div>
+		<div class="container">
+			<form action="" method="post" name="find">
+				{{ form.hidden_tag() }}
+				<p>
+					<!-- <input type="text" name="query" placeholder="search here"><br><br> -->
+					{{ form.first(placeholder="first article") }}
+				</p>
+				<p>
+					{{ form.second(placeholder="second article")}}
+				</p>
+				<input type="submit" value="Find" class="submit"><p>
+			</form>
+		</div>
+		<div class="result">
+			{% if boo %}
+			{% for link in path %}
+			<a href={{link}}>{{link}}</a><br>
+			{% endfor %}
+			{% endif %}
+		</div>
+	</body>
+</html>
